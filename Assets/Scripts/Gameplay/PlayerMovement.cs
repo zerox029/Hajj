@@ -61,9 +61,6 @@ public class PlayerMovement : MonoBehaviour {
                 if (manager.tiles[currentTile].GetComponent<TileInfo>().getTileInfo() == "question")
                 {
                     //Ask the question
-
-                    turnManager.changeTurn();
-                    canPlay = true;
                 }
             }
         }    
