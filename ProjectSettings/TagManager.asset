@@ -8,6 +8,8 @@ TagManager:
   - DiceNumber
   - PlayerSlider
   - PlayerCountText
+  - Dynamic
+  - Manager
   layers:
   - Default
   - TransparentFX

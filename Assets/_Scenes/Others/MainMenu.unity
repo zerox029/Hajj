@@ -222,7 +222,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f5d9a9dd10aeb845b9c6682e6bfba32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerCount: 0
+  playerCount: 1
+  slider: {fileID: 511758618}
+  playerCountText: {fileID: 1169598002}
 --- !u!1 &87387526
 GameObject:
   m_ObjectHideFlags: 0
@@ -2572,10 +2574,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '1
-
-
-'
+  m_Text: 1
 --- !u!222 &1169598003
 CanvasRenderer:
   m_ObjectHideFlags: 0

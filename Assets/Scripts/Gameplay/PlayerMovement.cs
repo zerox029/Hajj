@@ -4,32 +4,41 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour {
 
-    public GameManager manager;
-    public int currentTile;
-    public bool canPlay = true;
+    private TurnManager turnManager;
+    private GameManager manager;
 
-    float speed = 4.0f;
+    public int currentTile; //The tile number the player is currently on
+    public bool canPlay = true; //If the player is currently moving => false
 
     private void Start()
     {
         currentTile = 0;
+
+        turnManager = GameObject.FindGameObjectWithTag("Manager").GetComponent<TurnManager>();
+        manager = GameObject.FindGameObjectWithTag("Manager").GetComponent<GameManager>();
         transform.position = manager.tiles[currentTile].transform.position;
     }
 
-    private void WinGame()
-    {
-
-    }
-
+    /// <summary>
+    /// A coroutine that lerps the player from tile 1 to tile 2.
+    /// It then check what tile the player has landed on and calls
+    /// the appropriate function.
+    /// </summary>
     public IEnumerator MovePlayer(int tileNumber, Transform source, Transform target, float overtime)
     {
-        if(currentTile < 29)
+        if(currentTile < 29 && !manager.gameEnd)
         {
             if (canPlay)
             {
                 canPlay = false;
 
                 currentTile = tileNumber;
+
+                if(currentTile == 29)
+                {
+                    GetComponent<Player>().hasReachedEnd = true;
+                    manager.gameEnd = manager.checkForGameEnd();
+                }
 
                 float startTime = Time.time;
 
@@ -41,14 +50,22 @@ public class PlayerMovement : MonoBehaviour {
 
                 transform.position = target.position;
 
-                canPlay = true;
-            }
-        }
+                //If it is a normal tile
+                if(manager.tiles[currentTile].GetComponent<TileInfo>().getTileInfo() == null)
+                {
+                    turnManager.changeTurn();
+                    canPlay = true;
+                }
 
-        else
-        {
-            WinGame();
-        }
-       
+                //If it is a question tile
+                if (manager.tiles[currentTile].GetComponent<TileInfo>().getTileInfo() == "question")
+                {
+                    //Ask the question
+
+                    turnManager.changeTurn();
+                    canPlay = true;
+                }
+            }
+        }    
     }
 }

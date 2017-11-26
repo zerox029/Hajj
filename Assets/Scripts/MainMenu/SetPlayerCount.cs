@@ -5,15 +5,13 @@ using UnityEngine.UI;
 
 public class SetPlayerCount : MonoBehaviour {
 
-    public int playerCount;
-    private Slider slider;
-    private Text playerCountText;
+    public int playerCount = 1;
+    public Slider slider;
+    public Text playerCountText;
 
     private void Start()
     {
         PlayerPrefs.SetInt("PlayerCount", 1);
-        slider = GameObject.FindGameObjectWithTag("PlayerSlider").GetComponent<Slider>();
-        playerCountText = GameObject.FindGameObjectWithTag("PlayerCountText").GetComponent<Text>();
     }
 
     public void PlayerCount()

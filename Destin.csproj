@@ -96,10 +96,14 @@
     <Compile Include="Assets\3rd Party\Game Jam Template\Scripts\ShowPanels.cs" />
     <Compile Include="Assets\3rd Party\Game Jam Template\Scripts\StartOptions.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Dice.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\Player.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\PlayerCreation.cs" />
     <Compile Include="Assets\Scripts\Gameplay\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\MainMenu\SetPlayerCount.cs" />
     <Compile Include="Assets\Scripts\MainMenu\StartGame.cs" />
     <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
+    <Compile Include="Assets\Scripts\Managers\TurnManager.cs" />
+    <Compile Include="Assets\Scripts\TileInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\3rd Party\Game Jam Template\Fonts\OpenSans\License!.txt" />

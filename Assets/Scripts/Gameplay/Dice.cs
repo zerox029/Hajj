@@ -5,10 +5,8 @@ public class Dice : MonoBehaviour {
 
     Text numberTxt;
 
-    [SerializeField]
-    PlayerMovement playerMove;
-    [SerializeField]
-    GameManager manager;
+    public PlayerMovement playerMove;
+    public GameManager manager;
 
     private void Start()
     {
@@ -17,7 +15,7 @@ public class Dice : MonoBehaviour {
 
     public void RollDice()
     {
-        if(playerMove.canPlay)
+        if(playerMove.canPlay && !manager.gameEnd)
         {
             int random = Random.Range(1, 7);
             int destTile = playerMove.currentTile + random;
