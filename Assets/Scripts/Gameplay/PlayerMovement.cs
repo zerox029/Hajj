@@ -50,18 +50,8 @@ public class PlayerMovement : MonoBehaviour {
 
                 transform.position = target.position;
 
-                //If it is a normal tile
-                if(manager.tiles[currentTile].GetComponent<TileInfo>().getTileInfo() == null)
-                {
-                    turnManager.changeTurn();
-                    canPlay = true;
-                }
-
-                //If it is a question tile
-                if (manager.tiles[currentTile].GetComponent<TileInfo>().getTileInfo() == "question")
-                {
-                    //Ask the question
-                }
+                turnManager.changeTurn();
+                canPlay = true;
             }
         }    
     }
