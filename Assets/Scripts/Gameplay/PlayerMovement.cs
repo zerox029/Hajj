@@ -7,6 +7,11 @@ public class PlayerMovement : MonoBehaviour {
     private TurnManager turnManager;
     private GameManager manager;
 
+    public GameObject qPanel;
+    public GameObject blur;
+
+    public Canvas can;
+
     public int currentTile; //The tile number the player is currently on
     public bool canPlay = true; //If the player is currently moving => false
 
@@ -14,6 +19,7 @@ public class PlayerMovement : MonoBehaviour {
     {
         currentTile = 0;
 
+        can = GameObject.FindGameObjectWithTag("Canvas").GetComponent<Canvas>();
         turnManager = GameObject.FindGameObjectWithTag("Manager").GetComponent<TurnManager>();
         manager = GameObject.FindGameObjectWithTag("Manager").GetComponent<GameManager>();
         transform.position = manager.tiles[currentTile].transform.position;
@@ -50,8 +56,19 @@ public class PlayerMovement : MonoBehaviour {
 
                 transform.position = target.position;
 
-                turnManager.changeTurn();
-                canPlay = true;
+                //If the tile is a question tile
+                if (manager.tiles[currentTile].GetComponent<TileInfo>().questionTile)
+                {
+                    Instantiate(blur, can.transform);
+                    Instantiate(qPanel, can.transform);
+                }
+
+                //If it is not a question tile
+                else
+                {
+                    turnManager.changeTurn();
+                    canPlay = true;
+                }
             }
         }    
     }
