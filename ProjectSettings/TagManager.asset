@@ -10,6 +10,7 @@ TagManager:
   - PlayerCountText
   - Dynamic
   - Manager
+  - Canvas
   layers:
   - Default
   - TransparentFX
