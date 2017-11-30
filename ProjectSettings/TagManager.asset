@@ -11,6 +11,8 @@ TagManager:
   - Dynamic
   - Manager
   - Canvas
+  - QPanel
+  - Blur
   layers:
   - Default
   - TransparentFX

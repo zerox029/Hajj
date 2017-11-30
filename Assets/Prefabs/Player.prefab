@@ -66,7 +66,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 631a8be43eea9f646b33cd125494d5ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  qPanel: {fileID: 1027114271575950, guid: 7c63dd2963a823548b8b6ae185cd4ee4, type: 2}
+  qPanel: {fileID: 1911824237122634, guid: 6580b67f62eae094bb4fafec7b8ff19c, type: 2}
   blur: {fileID: 1109185427990172, guid: a1bf8905e99a6d643a970fcdf40fc447, type: 2}
   can: {fileID: 0}
   currentTile: 0

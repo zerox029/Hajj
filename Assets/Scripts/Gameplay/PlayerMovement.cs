@@ -25,6 +25,12 @@ public class PlayerMovement : MonoBehaviour {
         transform.position = manager.tiles[currentTile].transform.position;
     }
 
+    public void changeTurn()
+    {
+        turnManager.changeTurn();
+        canPlay = true;
+    }
+
     /// <summary>
     /// A coroutine that lerps the player from tile 1 to tile 2.
     /// It then check what tile the player has landed on and calls
@@ -66,8 +72,7 @@ public class PlayerMovement : MonoBehaviour {
                 //If it is not a question tile
                 else
                 {
-                    turnManager.changeTurn();
-                    canPlay = true;
+                    changeTurn();
                 }
             }
         }    
