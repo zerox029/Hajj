@@ -1,12 +1,95 @@
-{
-    "question": "Ou est la mecque?",
-    "options": [
-        "A",
-        "B",
-        "C",
-        "D"
-    ],
-    "answer": "2",
-    "difficulty": "medium",
-    "reward": "250$"
+﻿{
+    "questions": [
+        {
+            "id": 0,
+            "question": "Où se trouve la mecque?",
+            "options": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "answer": 2,
+            "difficulty": "Facile",
+            "reward": 100
+        },
+        {
+            "id": 1,
+            "question": "Quelles sont les restrictions vestimentaires pour les hommes?",
+            "options": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "answer": "3",
+            "difficulty": "Facile",
+            "reward": "100"
+        },
+        {
+            "id": 2,
+            "question": "Quelles sont les restrictions vestimentaires pour les femmes?",
+            "options": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "answer": "3",
+            "difficulty": "Facile",
+            "reward": "100"
+        },
+        {
+            "id": 3,
+            "question": "Qu'est-ce que la Kabba?",
+            "options": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "answer": "2",
+            "difficulty": "Moyen",
+            "reward": "250"
+        },
+        {
+            "id": 4,
+            "question": "Pourquoi est-il important de lapider les 3 stelles?",
+            "options": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "answer": "3",
+            "difficulty": "Difficile",
+            "reward": "500"
+        },
+        {
+            "id": 5,
+            "question": "Qu'est-ce que l'Iram?",
+            "options": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "answer": "3",
+            "difficulty": "Moyen",
+            "reward": "250"
+        },
+        {
+            "id": 6,
+            "question": "Quel animal est sacrifié durant le pelerinage?",
+            "options": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "answer": "3",
+            "difficulty": "Moyen",
+            "reward": "250"
+        }
+    ]
 }
