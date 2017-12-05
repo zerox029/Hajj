@@ -37,7 +37,8 @@ public class Question : MonoBehaviour {
         jsonString = File.ReadAllText(jsonPath);
         questionData = JsonMapper.ToObject(jsonString);
 
-        question = getQuestion(0);
+        int questionId = PlayerPrefs.GetInt("questionId", 0);
+        question = getQuestion(questionId);
         options = new string[4]; 
 
         title = question["question"].ToString();
@@ -104,7 +105,10 @@ public class Question : MonoBehaviour {
 
     public void rightAnswer()
     {
+        PlayerPrefs.SetInt("questionId", PlayerPrefs.GetInt("questionId", 0) + 1);
         playerMove = GameObject.FindGameObjectWithTag("Manager").GetComponent<Dice>().playerMove;
+
+        playerMove.gameObject.GetComponent<Player>().balance += reward;
 
         EventSystem.current.currentSelectedGameObject.GetComponent<Image>().color = wrongColor;
         Destroy(GameObject.FindGameObjectWithTag("QPanel"));

@@ -9,6 +9,11 @@ public class GameManager : MonoBehaviour {
     public bool gameEnd = false;
     public TurnManager turnManager;
 
+    private void Start()
+    {
+        PlayerPrefs.SetInt("questionId", 0);
+    }
+
     public bool checkForGameEnd()
     {
         foreach (GameObject player in turnManager.players)

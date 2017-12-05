@@ -22,9 +22,9 @@
                 "C",
                 "D"
             ],
-            "answer": "3",
+            "answer": 3,
             "difficulty": "Facile",
-            "reward": "100"
+            "reward": 100
         },
         {
             "id": 2,
@@ -35,9 +35,9 @@
                 "C",
                 "D"
             ],
-            "answer": "3",
+            "answer": 3,
             "difficulty": "Facile",
-            "reward": "100"
+            "reward": 100
         },
         {
             "id": 3,
