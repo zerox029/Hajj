@@ -14,7 +14,11 @@ public class Question : MonoBehaviour {
     JsonData questionData;
     JsonData question;
 
-    QuestionData questionDataObj;
+    public string title;
+    public string[] options;
+    public int answer;
+    public string difficulty;
+    public int reward;
 
     public Color wrongColor;
     public Color rightColor;
@@ -24,7 +28,7 @@ public class Question : MonoBehaviour {
     Text diffText;
     Text rewardText;
     Text questionTitle;
-    GameObject[] options;
+    GameObject[] optionsBtn;
 
     private void Start()
     {
@@ -34,50 +38,51 @@ public class Question : MonoBehaviour {
         questionData = JsonMapper.ToObject(jsonString);
 
         question = getQuestion(0);
+        options = new string[4]; 
 
-        questionDataObj.name = question["question"].ToString();
-        questionDataObj.options[0] = question["options"][0].ToString();
-        questionDataObj.options[1] = question["options"][1].ToString();
-        questionDataObj.options[2] = question["options"][2].ToString();
-        questionDataObj.options[3] = question["options"][3].ToString();
-        questionDataObj.answer = (int)question["answer"];
-        questionDataObj.difficulty = question["difficulty"].ToString();
-        questionDataObj.reward = (int)question["reward"];
+        title = question["question"].ToString();
+        options[0] = question["options"][0].ToString();
+        options[1] = question["options"][1].ToString();
+        options[2] = question["options"][2].ToString();
+        options[3] = question["options"][3].ToString();
+        answer = (int)question["answer"];
+        difficulty = question["difficulty"].ToString();
+        reward = (int)question["reward"];
 
 
         //Setting question title
         questionTitle = transform.Find("Question").GetComponent<Text>();
-        questionTitle.text = questionDataObj.name;
+        questionTitle.text = title;
 
-        //Getting options
-        options = new GameObject[] { transform.Find("AnswerA").gameObject,
-                                     transform.Find("AnswerB").gameObject,
-                                     transform.Find("AnswerC").gameObject,
-                                     transform.Find("AnswerD").gameObject };
+        //Getting options buttons
+        optionsBtn = new GameObject[] { transform.Find("AnswerA").gameObject,
+                                        transform.Find("AnswerB").gameObject,
+                                        transform.Find("AnswerC").gameObject,
+                                        transform.Find("AnswerD").gameObject };
 
         //Setting options text
-        options[0].GetComponentInChildren<Text>().text = questionDataObj.options[0];
-        options[1].GetComponentInChildren<Text>().text = questionDataObj.options[1];
-        options[2].GetComponentInChildren<Text>().text = questionDataObj.options[2];
-        options[3].GetComponentInChildren<Text>().text = questionDataObj.options[3];
+        optionsBtn[0].GetComponentInChildren<Text>().text = options[0];
+        optionsBtn[1].GetComponentInChildren<Text>().text = options[1];
+        optionsBtn[2].GetComponentInChildren<Text>().text = options[2];
+        optionsBtn[3].GetComponentInChildren<Text>().text = options[3];
 
         //Setting the buttons
-        for(int i = 0; i < questionDataObj.options.Length; i++)
+        for(int i = 0; i < options.Length; i++)
         {
-            if(i == questionDataObj.answer - 1)
+            if(i == answer - 1)
             {
-                options[i].GetComponent<Button>().onClick.AddListener(rightAnswer);
+                optionsBtn[i].GetComponent<Button>().onClick.AddListener(rightAnswer);
             }
             else
             {
-                options[i].GetComponent<Button>().onClick.AddListener(wrongAnswer);
+                optionsBtn[i].GetComponent<Button>().onClick.AddListener(wrongAnswer);
             }
         }
 
         diffText = transform.Find("Difficulty").GetComponent<Text>();
-        diffText.text = "Difficulty: " + questionDataObj.difficulty;
+        diffText.text = "Difficulty: " + difficulty;
         rewardText = transform.Find("Money").GetComponent<Text>();
-        rewardText.text =  questionDataObj.reward + "$";
+        rewardText.text =  reward + "$";
     }
 
     public void wrongAnswer()
@@ -86,15 +91,15 @@ public class Question : MonoBehaviour {
 
         if((int)question["reward"] > 100)
         {
-            questionDataObj.reward -= 100;
+            reward -= 100;
         }
 
         else
         {
-            questionDataObj.reward = 0;
+            reward = 0;
         }
 
-        rewardText.text = questionDataObj.reward.ToString() + "$";
+        rewardText.text = reward.ToString() + "$";
     }
 
     public void rightAnswer()
@@ -118,13 +123,4 @@ public class Question : MonoBehaviour {
 
         return null;
     }
-}
-
-public class QuestionData
-{
-    public string name;
-    public string[] options;
-    public int answer;
-    public string difficulty;
-    public int reward;
 }
