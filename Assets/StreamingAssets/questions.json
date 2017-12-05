@@ -1,0 +1,11 @@
+{
+    "question": "Ou est la mecque?",
+    "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+    ],
+    "answer": "B",
+    "difficulty":  "medium"
+}
