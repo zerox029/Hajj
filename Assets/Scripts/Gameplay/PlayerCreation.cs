@@ -1,11 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerCreation : MonoBehaviour {
 
     private Transform dynamic;
     public GameObject player;
+
+    public Color[] playerColors;
 
     void CreatePlayerTokens(int playerCount)
     {
@@ -13,6 +16,8 @@ public class PlayerCreation : MonoBehaviour {
         {
             GameObject inst = Instantiate(player, dynamic);
             inst.GetComponent<Player>().turnNumber = i + 1;
+            inst.GetComponent<SpriteRenderer>().sortingOrder = i * -1;
+            inst.GetComponent<SpriteRenderer>().color = playerColors[i];
         }
     }
 

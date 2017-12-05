@@ -3770,6 +3770,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1901302758641618, guid: 44f018e459e98214d80cf9cca0922b6e, type: 2}
+  playerColors:
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 0, g: 0.7931032, b: 1, a: 1}
+  - {r: 0, g: 1, b: 0.21379304, a: 1}
+  - {r: 0.8014706, g: 0.023572687, b: 0.7800115, a: 1}
+  - {r: 1, g: 0.5172414, b: 0, a: 1}
 --- !u!114 &1839962107
 MonoBehaviour:
   m_ObjectHideFlags: 0

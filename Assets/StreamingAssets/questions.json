@@ -48,7 +48,7 @@
                 "C",
                 "D"
             ],
-            "answer": "2",
+            "answer": 2,
             "difficulty": "Moyen",
             "reward": "250"
         },
@@ -61,9 +61,9 @@
                 "C",
                 "D"
             ],
-            "answer": "3",
+            "answer": 3,
             "difficulty": "Difficile",
-            "reward": "500"
+            "reward": 500
         },
         {
             "id": 5,
@@ -74,9 +74,9 @@
                 "C",
                 "D"
             ],
-            "answer": "3",
+            "answer": 3,
             "difficulty": "Moyen",
-            "reward": "250"
+            "reward": 250
         },
         {
             "id": 6,
@@ -87,9 +87,9 @@
                 "C",
                 "D"
             ],
-            "answer": "3",
+            "answer": 3,
             "difficulty": "Moyen",
-            "reward": "250"
+            "reward": 250
         }
     ]
 }
