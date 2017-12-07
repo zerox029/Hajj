@@ -2,14 +2,14 @@
     "questions": [
         {
             "id": 0,
-            "question": "Où se trouve la mecque?",
+            "question": "Où se trouve la Mecque?",
             "options": [
-                "A",
-                "B",
-                "C",
-                "D"
+                "En Arabie Saoudite",
+                "En Iran",
+                "Au Mexique",
+                "Dans le Kabba"
             ],
-            "answer": 2,
+            "answer": 1,
             "difficulty": "Facile",
             "reward": 100
         },
@@ -17,25 +17,25 @@
             "id": 1,
             "question": "Quelles sont les restrictions vestimentaires pour les hommes?",
             "options": [
-                "A",
-                "B",
-                "C",
-                "D"
+                "Tout vêtement ne doit laisser présager la richesse du vêti",
+                "Ils n'ont pas le droit aux chaussures",
+                "Ils doivent porter deux tissus blancs sans coutures",
+                "Ils doivent porter le voile"
             ],
             "answer": 3,
-            "difficulty": "Facile",
-            "reward": 100
+            "difficulty": "Difficile",
+            "reward": 500
         },
         {
             "id": 2,
             "question": "Quelles sont les restrictions vestimentaires pour les femmes?",
             "options": [
-                "A",
-                "B",
-                "C",
-                "D"
+                "Il faut porter le voile",
+                "Il faut porter des gants ceremoniaux",
+                "Il est interdit de porter le voile",
+                "Pas de vêtements Bob l'éponge"
             ],
-            "answer": 3,
+            "answer": 2,
             "difficulty": "Facile",
             "reward": 100
         },
@@ -43,23 +43,23 @@
             "id": 3,
             "question": "Qu'est-ce que la Kabba?",
             "options": [
-                "A",
-                "B",
-                "C",
-                "D"
+                "Une structure pour les ceremonies de sacrifices",
+                "La maison de l'imam",
+                "Une structure qui est dite être la maison d'Abraham",
+                "Une météorite"
             ],
-            "answer": 2,
+            "answer": 3,
             "difficulty": "Moyen",
             "reward": 250
         },
         {
             "id": 4,
-            "question": "Pourquoi est-il important de lapider les 3 stelles?",
+            "question": "Pourquoi est-il important de lapider les 3 stelles représentant le Diable?",
             "options": [
-                "A",
-                "B",
-                "C",
-                "D"
+                "Parce que le Diable est mal",
+                "Parce qu'ils forment un triangle autour de l'endroit ou Satan est tombé du ciel",
+                "Parce que c'est les trois endroits ou il essaya de détourner Abraham",
+                "Parce que c'est les trois endroits ou le Diable tenta de retourner sur la terre"
             ],
             "answer": 3,
             "difficulty": "Difficile",
@@ -67,12 +67,12 @@
         },
         {
             "id": 5,
-            "question": "Qu'est-ce que l'Iram?",
+            "question": "Qu'est-ce que l'Ihram?",
             "options": [
-                "A",
-                "B",
-                "C",
-                "D"
+                "Le stand sur lequel on repose le Coran",
+                "Une coupe utilisée lors des cérémonies religieuses",
+                "Un état de concentration spirituelle",
+                "Le pays voisin de l'Iran"
             ],
             "answer": 3,
             "difficulty": "Moyen",
@@ -82,157 +82,300 @@
             "id": 6,
             "question": "Quel animal est sacrifié durant le pelerinage?",
             "options": [
-                "A",
-                "B",
-                "C",
-                "D"
+                "Un Chat",
+                "Un Âne",
+                "Un Agneau",
+                "Un Macaque"
             ],
             "answer": 3,
-            "difficulty": "Moyen",
-            "reward": 250
+            "difficulty": "Facile",
+            "reward": 100
         },
         {
             "id": 7,
-            "question": "Quel animal est sacrifié durant le pelerinage?",
+            "question": "Combien de temps dure le pélérinage?",
             "options": [
-                "A",
-                "B",
-                "C",
-                "D"
+                "4 jours",
+                "5 jours",
+                "6 jours",
+                "7 jours"
             ],
-            "answer": 3,
-            "difficulty": "Moyen",
-            "reward": 250
+            "answer": 2,
+            "difficulty": "Facile",
+            "reward": 100
         },
-        {
+		{
             "id": 8,
-            "question": "Quel animal est sacrifié durant le pelerinage?",
+            "question": "Qu'est le Hajj?",
             "options": [
-                "A",
-                "B",
-                "C",
-                "D"
+                "l'action de lapider les 3 stelles",
+                "C'est le contraire du jazz",
+                "C'est le concept de la vie étérnelle auprès de dieu",
+                "C'est le pélérinage"
             ],
-            "answer": 3,
-            "difficulty": "Moyen",
-            "reward": 250
+            "answer": 4,
+            "difficulty": "Difficile",
+            "reward": 500
         },
-        {
-            "id": 0,
-            "question": "Où se trouve la mecque?",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "answer": 2,
-            "difficulty": "Facile",
-            "reward": 100
-        },
-        {
+		{
             "id": 9,
-            "question": "Quelles sont les restrictions vestimentaires pour les hommes?",
+            "question": "Quelle est l'importance de la Kabba dans les rituels qui rapportent au pélérinage?",
             "options": [
-                "A",
-                "B",
-                "C",
-                "D"
+                "Il guérit tous les maladies",
+                "C'est central dans la purification du corps",
+                "Il faut tourner autour d'elle 7 fois",
+                "C'est ou on sacrifie l'animal sacré"
             ],
-            "answer": 3,
-            "difficulty": "Facile",
-            "reward": 100
-        },
-        {
-            "id": 10,
-            "question": "Quelles sont les restrictions vestimentaires pour les femmes?",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "answer": 3,
-            "difficulty": "Facile",
-            "reward": 100
-        },
-        {
-            "id": 11,
-            "question": "Qu'est-ce que la Kabba?",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "answer": 2,
+            "answer": 1,
             "difficulty": "Moyen",
             "reward": 250
         },
-        {
-            "id": 12,
-            "question": "Pourquoi est-il important de lapider les 3 stelles?",
+		{
+            "id": 10,
+            "question": "Les femmes peuvent-elles participer au pélérinage?",
             "options": [
-                "A",
-                "B",
-                "C",
-                "D"
+                "Oui, mais seulment avec un homme",
+                "Oui",
+                "Non",
+                "Préférer ne pas répondre"
+            ],
+            "answer": 2,
+            "difficulty": "Facile",
+            "reward": 100
+        },
+		{
+            "id": 11,
+            "question": "Tous les musulmans sont ils tenus d'effectuer le pélérinage?",
+            "options": [
+                "Oui",
+                "Non",
+                "Tous sauf les pauvres",
+                "Tous sauf les riches"
+            ],
+            "answer": 3,
+            "difficulty": "Facile",
+            "reward": 100
+        },
+		{
+            "id": 12,
+            "question": "Le sacrifice de l'animal sacré est il nécéssaire?",
+            "options": [
+                "Oui",
+                "Les vegan sont exclus",
+                "Non",
+                "Depuis l'ascenscion de Ahmed 1er au throne de l'empire ottoman il est devenu ambigue, car son père ne l'avait pas fait durant son trajet"
+            ],
+            "answer": 1,
+            "difficulty": "Moyen",
+            "reward": 250
+        },
+		{
+            "id": 13,
+            "question": "Quelle est l'importance de la Kabba dans les rituels qui rapportent au pélérinage?",
+            "options": [
+                "Il guérit tous les maladies",
+                "C'est central dans la purification du corps",
+                "Il faut tourner autour d'elle 7 fois",
+                "C'est ou on sacrifie l'animal sacré"
+            ],
+            "answer": 1,
+            "difficulty": "Moyen",
+            "reward": 250
+        },
+		{
+            "id": 14,
+            "question": "Quels bénéfices le pélérinage rapporte-t-il aux pelerins?",
+            "options": [
+                "Il guérit tous les maladies",
+                "Il garantie le paradis et les 50 vierges",
+                "Un allègement sur la dîme durant l'année du pélérinage",
+                "Il efface les pêchés du pelerin"
+            ],
+            "answer": 4,
+            "difficulty": "Difficile",
+            "reward": 500
+        },
+		{
+            "id": 15,
+            "question": "Le pélérinage fait partie de 5 lois si importantes qu'ils ont leur propre nom, quel est ce nom?",
+            "options": [
+                "Les 5 colonnes de l'Islam",
+                "Les 5 piliers de l'Islam",
+                "Les 5 rangées de l'Islam",
+                "Les qanun muhimin"
+            ],
+            "answer": 2,
+            "difficulty": "Facile",
+            "reward": 100
+        },
+		{
+            "id": 16,
+            "question": "Combien de pelerins fréquentent la Mecque à chaque an?",
+            "options": [
+                "2 000 000",
+                "1 000 000",
+                "500 000",
+                "10 000 000"
+            ],
+            "answer": 1,
+            "difficulty": "Moyen",
+            "reward": 250
+        },
+		{
+            "id": 17,
+            "question": "Met en ordre les jours du séjour à la Mecque: 1. Rituels de prière, lapidation des stèles, récitations d'invocations; 2. Razer les cheveux et 7 tours autour de la Kaba; 3. Marche vers la montagne Arafat et séjour à Muzdalifah + récolte de 49 cailloux; 4. Déclaration du pélérinage, Umrah et marche à Mira; 5. Retour à Mina et sacrifice d'un agneau.",
+            "options": [
+                "5,4,3,2,1",
+                "3,4,5,2,1",
+                "4,3,1,2,5",
+                "4,3,5,1,2"
+            ],
+            "answer": 4,
+            "difficulty": "Difficile",
+            "reward": 500
+        },
+		{
+            "id": 18,
+            "question": "Peut on participer au pélérinage en tant qu'athée?",
+            "options": [
+                "Oui mais il faut sortir croyant",
+                "Oui mais il faut remplir des formulaires",
+                "Oui",
+                "Non"
+            ],
+            "answer": 4,
+            "difficulty": "Moyen",
+            "reward": 250
+        },
+		{
+            "id": 19,
+            "question": "Quel est la symbolique de l'agneau sacrifié?",
+            "options": [
+                "Il symbolise l'agneau que Abraham tua au lieu de son fils",
+                "Il symbolise que le pélerin a croyance en Dieu",
+                "Il symbolise les péchés commis durant la vie du pelerin",
+                "Il symbolise la temptation du diable"
+            ],
+            "answer": 1,
+            "difficulty": "Facile",
+            "reward": 100
+        },
+		{
+            "id": 20,
+            "question": "Quand est-ce que la Kaba a été batie?",
+            "options": [
+                "Il y a longtemps par Abraham",
+                "En 653 par le Caliph Uthman",
+                "Il a été construit par Allah et ses anges",
+                "Il est construit par Mahomet"
+            ],
+            "answer": 3,
+            "difficulty": "Facile",
+            "reward": 100
+        },
+		{
+            "id": 21,
+            "question": "La Mecque est-elle ouverte aux non-croyants?",
+            "options": [
+                "Oui",
+                "Peut-être",
+                "Oui mais il faut remplir de la documentation",
+                "Non"
+            ],
+            "answer": 4,
+            "difficulty": "Moyen",
+            "reward": 250
+        },
+		{
+            "id": 22,
+            "question": "Beaucoup de gens reviennent changés de cette expérience, quelles émotions expriment-ils?",
+            "options": [
+                "Contentement, Unité et Solemnité",
+                "Frustration et mécontentement",
+                "Satisfaction et épuisement",
+                "Surprise"
+            ],
+            "answer": 1,
+            "difficulty": "Facile",
+            "reward": 100
+        },
+		{
+            "id": 23,
+            "question": "Quelle est le plus grand revenu pour l'arabie saoudite et l'argent apporté par ce dernier?",
+            "options": [
+                "Le hajj, 6M",
+                "Gaz, 5M",
+                "Le hajj, 8.5M",
+                "Le pétrole, 10M"
             ],
             "answer": 3,
             "difficulty": "Difficile",
             "reward": 500
         },
-        {
-            "id": 13,
-            "question": "Qu'est-ce que l'Iram?",
+		{
+            "id": 24,
+            "question": "Quelles journées se déroule le pélérinage?",
             "options": [
-                "A",
-                "B",
-                "C",
-                "D"
+                "5-9 Dhu al- Qa'dah",
+                "9-14 Dhu al-Hijjah",
+                "8-12 Dhu al-Hijjah",
+                "6-10 Shawaal"
+            ],
+            "answer": 3,
+            "difficulty": "Difficile",
+            "reward": 500
+        },
+		{
+            "id": 25,
+            "question": "Quel est la symbolique de l'agneau sacrifié?",
+            "options": [
+                "Il symbolise l'agneau que Abraham tua au lieu de son fils",
+                "Il symbolise que le pélerin a croyance en Dieu",
+                "Il symbolise les péchés commis durant la vie du pelerin",
+                "Il symbolise la temptation du diable"
+            ],
+            "answer": 1,
+            "difficulty": "Facile",
+            "reward": 100
+        },
+		{
+            "id": 26,
+            "question": "Tous les musulmans sont ils tenus d'effectuer le pélérinage?",
+            "options": [
+                "Oui",
+                "Non",
+                "Tous sauf les pauvres",
+                "Tous sauf les riches"
+            ],
+            "answer": 3,
+            "difficulty": "Facile",
+            "reward": 100
+        },
+		{
+            "id": 27,
+            "question": "Qu'est-ce que l'Ihram?",
+            "options": [
+                "Le stand sur lequel on repose le Coran",
+                "Une coupe utilisée lors des cérémonies religieuses",
+                "Un état de concentration spirituelle",
+                "Le pays voisin de l'Iran"
             ],
             "answer": 3,
             "difficulty": "Moyen",
             "reward": 250
         },
-        {
-            "id": 14,
-            "question": "Quel animal est sacrifié durant le pelerinage?",
+		{
+            "id": 28,
+            "question": "Quels bénéfices le pélérinage rapporte-t-il aux pelerins?",
             "options": [
-                "A",
-                "B",
-                "C",
-                "D"
+                "Il guérit tous les maladies",
+                "Il garantie le paradis et les 50 vierges",
+                "Un allègement sur la dîme durant l'année du pélérinage",
+                "Il efface les pêchés du pelerin"
             ],
-            "answer": 3,
-            "difficulty": "Moyen",
-            "reward": 250
-        },
-        {
-            "id": 15,
-            "question": "Quel animal est sacrifié durant le pelerinage?",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "answer": 3,
-            "difficulty": "Moyen",
-            "reward": 250
-        },
-        {
-            "id": 16,
-            "question": "Quel animal est sacrifié durant le pelerinage?",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "answer": 3,
-            "difficulty": "Moyen",
-            "reward": 250
+            "answer": 4,
+            "difficulty": "Difficile",
+            "reward": 500
         }
     ]
 }
