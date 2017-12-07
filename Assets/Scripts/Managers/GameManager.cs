@@ -7,6 +7,8 @@ public class GameManager : MonoBehaviour {
 
     public GameObject[] tiles;
     public GameObject gameEndPanel;
+    public GameObject blur;
+    public Canvas overUI;
 
     public bool gameEnd = false;
     public TurnManager turnManager;
@@ -36,7 +38,8 @@ public class GameManager : MonoBehaviour {
                 return false;
         }
 
-        gameEndPanel.SetActive(true);
+        Instantiate(blur, overUI.transform);
+        Instantiate(gameEndPanel, overUI.transform);
         getRankings();
         return true;
     }

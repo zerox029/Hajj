@@ -81,7 +81,7 @@ public class Question : MonoBehaviour {
         }
 
         diffText = transform.Find("Difficulty").GetComponent<Text>();
-        diffText.text = "Difficulty: " + difficulty;
+        diffText.text = "Difficulté: " + difficulty;
         rewardText = transform.Find("Money").GetComponent<Text>();
         rewardText.text =  reward + "$";
     }
