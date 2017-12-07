@@ -50,7 +50,7 @@
             ],
             "answer": 2,
             "difficulty": "Moyen",
-            "reward": "250"
+            "reward": 250
         },
         {
             "id": 4,
@@ -80,6 +80,149 @@
         },
         {
             "id": 6,
+            "question": "Quel animal est sacrifié durant le pelerinage?",
+            "options": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "answer": 3,
+            "difficulty": "Moyen",
+            "reward": 250
+        },
+        {
+            "id": 7,
+            "question": "Quel animal est sacrifié durant le pelerinage?",
+            "options": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "answer": 3,
+            "difficulty": "Moyen",
+            "reward": 250
+        },
+        {
+            "id": 8,
+            "question": "Quel animal est sacrifié durant le pelerinage?",
+            "options": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "answer": 3,
+            "difficulty": "Moyen",
+            "reward": 250
+        },
+        {
+            "id": 0,
+            "question": "Où se trouve la mecque?",
+            "options": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "answer": 2,
+            "difficulty": "Facile",
+            "reward": 100
+        },
+        {
+            "id": 9,
+            "question": "Quelles sont les restrictions vestimentaires pour les hommes?",
+            "options": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "answer": 3,
+            "difficulty": "Facile",
+            "reward": 100
+        },
+        {
+            "id": 10,
+            "question": "Quelles sont les restrictions vestimentaires pour les femmes?",
+            "options": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "answer": 3,
+            "difficulty": "Facile",
+            "reward": 100
+        },
+        {
+            "id": 11,
+            "question": "Qu'est-ce que la Kabba?",
+            "options": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "answer": 2,
+            "difficulty": "Moyen",
+            "reward": 250
+        },
+        {
+            "id": 12,
+            "question": "Pourquoi est-il important de lapider les 3 stelles?",
+            "options": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "answer": 3,
+            "difficulty": "Difficile",
+            "reward": 500
+        },
+        {
+            "id": 13,
+            "question": "Qu'est-ce que l'Iram?",
+            "options": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "answer": 3,
+            "difficulty": "Moyen",
+            "reward": 250
+        },
+        {
+            "id": 14,
+            "question": "Quel animal est sacrifié durant le pelerinage?",
+            "options": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "answer": 3,
+            "difficulty": "Moyen",
+            "reward": 250
+        },
+        {
+            "id": 15,
+            "question": "Quel animal est sacrifié durant le pelerinage?",
+            "options": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "answer": 3,
+            "difficulty": "Moyen",
+            "reward": 250
+        },
+        {
+            "id": 16,
             "question": "Quel animal est sacrifié durant le pelerinage?",
             "options": [
                 "A",

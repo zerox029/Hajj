@@ -18,6 +18,28 @@ public class PlayerCreation : MonoBehaviour {
             inst.GetComponent<Player>().turnNumber = i + 1;
             inst.GetComponent<SpriteRenderer>().sortingOrder = i * -1;
             inst.GetComponent<SpriteRenderer>().color = playerColors[i];
+            
+            switch(i)
+            {
+                case 0:
+                    inst.GetComponent<Player>().color = "Rouge";
+                    break;
+                case 1:
+                    inst.GetComponent<Player>().color = "Bleu";
+                    break;
+                case 2:
+                    inst.GetComponent<Player>().color = "Vert";
+                    break;
+                case 3:
+                    inst.GetComponent<Player>().color = "Mauve";
+                    break;
+                case 4:
+                    inst.GetComponent<Player>().color = "Orange";
+                    break;
+                default:
+                    inst.GetComponent<Player>().color = "unknown player";
+                    break;
+            }
         }
     }
 

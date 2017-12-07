@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour {
 
     public GameObject[] tiles;
+    public GameObject gameEndPanel;
 
     public bool gameEnd = false;
     public TurnManager turnManager;
@@ -14,6 +16,18 @@ public class GameManager : MonoBehaviour {
         PlayerPrefs.SetInt("questionId", 0);
     }
 
+    void getRankings()
+    {
+        GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
+        Text rankingPanel = gameEndPanel.transform.Find("Players").GetComponent<Text>();
+        rankingPanel.text = "";
+
+        foreach(GameObject go in players)
+        {
+            rankingPanel.text += go.GetComponent<Player>().color + ": " + go.GetComponent<Player>().balance + "$\n";
+        }
+    }
+
     public bool checkForGameEnd()
     {
         foreach (GameObject player in turnManager.players)
@@ -21,6 +35,9 @@ public class GameManager : MonoBehaviour {
             if (!player.GetComponent<Player>().hasReachedEnd)
                 return false;
         }
+
+        gameEndPanel.SetActive(true);
+        getRankings();
         return true;
     }
 
